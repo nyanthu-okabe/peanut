@@ -121,7 +121,7 @@
           <li>ピーナッツに関する教育活動と普及活動</li>
           <li>環境に優しい農業技術の研究・支援</li>
         </ul>
-        <button type="button"　onclick="buypeanut();"　>ピーナッツを買う</button>
+        <button type="button" id="buy"　>ピーナッツを買う</button>
       </section>
 
       <section id="contact">
@@ -146,9 +146,16 @@
     </footer>
   </body>
   <script>
-    function buypeanut(){
-    let userName = prompt('peanut passcode', 'guest');
-    alert("Not correct peanut passcode");
+    // ボタンクリック関数
+    function butotnClick1(){
+      let userName = prompt('peanut passcode', 'guest');
+      alert("Not correct peanut passcode");;
     }
+    
+    // document.getElementById()でHTMLの中でid属性がbtnの要素を取得し、変数buttonに代入する
+    let button1 = document.getElementById('buy');
+    // buttonのonclickプロパティに上記で宣言しているボタンクリック関数を代入
+    button1.onclick = butotnClick1;
+
   </script>
 </html>
