@@ -121,7 +121,7 @@
           <li>ピーナッツに関する教育活動と普及活動</li>
           <li>環境に優しい農業技術の研究・支援</li>
         </ul>
-        <button type="button">ピーナッツを買う</button>
+        <button type="button"　onclick="buypeanut();"　>ピーナッツを買う</button>
       </section>
 
       <section id="contact">
@@ -131,7 +131,7 @@
         </p>
         <p>
           📧 メール: <a href="mailto:info@peanut.pgw.jp">info@peanut.pgw.jp</a><br />
-          🌐 サイト: <a href="https://peanut.pgw.jp" target="_blank" rel="noopener noreferrer">peanut.pgw.jp</a>
+          🌐 サイト: <a href="https://all.peanut.pgw.jp" target="_blank" rel="noopener noreferrer">all.peanut.pgw.jp</a>
         </p>
       </section>
     </main>
@@ -145,4 +145,10 @@
       </p>
     </footer>
   </body>
+  <script>
+    function buypeanut(){
+    let userName = prompt('peanut passcode', 'guest');
+    alert("Not correct peanut passcode")
+    }
+  </script>
 </html>
